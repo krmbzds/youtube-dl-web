@@ -126,8 +126,8 @@ InfoViewer.prototype = {
             this.display_error(err_msg);
             return;
         }
-        el.innerHTML = 'Videos for: ';
-        el.appendChild(this.html_link(data.url));
+        // el.innerHTML = 'Videos for: ';
+        // el.appendChild(this.html_link(data.url));
         table = document.createElement('table');
         table.setAttribute('class', 'table');
         table.innerHTML = '<thead><tr><th>Thumbnail</th><th>Video title</th><th>Format</th><th>Download link</th></tr></thead>';
