@@ -16,6 +16,8 @@ InfoViewer.prototype = {
         var link = document.createElement('a');
         link.href = this.html_href(url) || "#";
         link.textContent = message || url;
+        link.classList.add("btn")
+        link.classList.add("btn-success")
         return link;
     },
     html_link_on_click: function (url) {
