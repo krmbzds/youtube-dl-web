@@ -108,8 +108,8 @@ InfoViewer.prototype = {
     display_loading: function (url) {
         this.clear();
         var vid_section = this.video_section(), message = document.createElement('p'), progress = document.createElement('div');
-        message.innerHTML = 'Requesting info for the url: ';
-        message.appendChild(this.html_link(url));
+        message.innerHTML = 'Requesting Info for the URL';
+        // message.appendChild(this.html_link(url));
         vid_section.appendChild(message);
         progress.id = "progressbar";
         progress.setAttribute('class', 'progress progress-striped active');
